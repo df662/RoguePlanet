@@ -20,7 +20,7 @@ jobs:
       run: cl RoguePlanet.cpp /link kernel32.lib bcrypt.lib taskschd.lib comsupp.lib virtdisk.lib ntdll.lib Rpcrt4.lib shlwapi.lib
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: RoguePlanet.exe
         path: RoguePlanet.exe
