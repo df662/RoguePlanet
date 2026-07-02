@@ -17,7 +17,7 @@ jobs:
       uses: ilammy/msvc-dev-cmd@v1
 
     - name: Compile
-      run: cl /DUNICODE /D_UNICODE RoguePlanet.cpp /link kernel32.lib bcrypt.lib taskschd.lib comsupp.lib virtdisk.lib ntdll.lib Rpcrt4.lib shlwapi.lib ole32.lib
+      run: cl /DUNICODE /D_UNICODE RoguePlanet.cpp /link kernel32.lib advapi32.lib bcrypt.lib taskschd.lib comsupp.lib virtdisk.lib ntdll.lib Rpcrt4.lib shlwapi.lib ole32.lib
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
